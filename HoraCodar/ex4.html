@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <script>
+        //Ex--4
+        //Considerando a figura acima, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+        var escolha = prompt("Escreva qual área você deseja calcular: \n(Opções: retângulo, quadrado, losango, trapézio, parlelogramo, triângulo e círculo)");
+
+        switch(escolha) {
+            case "retângulo":
+                var base = Number(prompt("Digite a base do retângulo em cm: "));
+                var altura = Number(prompt("Digite a altura do retângulo em cm: "));
+                alert("A área do retângulo é igual a: " +base*altura + "cm².");
+                break;
+            case "quadrado":
+                var lado = Number(prompt("Digite a medida do lado do quadrado em cm"));
+                alert("A área do quadrado é igual a: "+ lado**2 + "cm².");
+                break;
+            case "losango":
+                var diagonal_maior = Number(prompt("Digite a diagonal maior do  em cm: "));
+                var diagonal_menor = Number(prompt("Digite a diagonal menor do losango em cm: "));
+                alert("A área do losango é igual a: "+ (diagonal_maior*diagonal_menor)/2 + "cm².");
+                break;
+            case "trapézio":
+                var base_maior = Number(prompt("Digite a medida da base maior do trapézio em cm: "));
+                var base_menor = Number(prompt("Digite a medida da base menos do trapézio em cm: "));
+                var altura = Number(prompt("Digite a altura do trapézio em cm: "));
+                alert("A área do trapézio é igual a: " + ((base_maior+base_menor)*altura)/2 + "cm².");
+                break;
+            case "paralelogramo":
+                var base = Number(prompt("Digite a base do paralelogramo em cm: "));
+                var altura = Number(prompt("Digite a altura do paralelogramo em cm: "));
+                alert("A área do paralelogramo é igual a: " + base*altura + "cm².");
+                break;
+            case "triângulo":
+                var base = Number(prompt("Digite o valor da base do triângulo em cm: "));
+                var altura = Number(prompt("Digite o valor da altura do triângulo em cm: "));
+                alert("A área do triângulo é igual a: " + (base*altura)/2 + "cm².")
+                break;
+            case "círculo":
+                var raio = Number(prompt("Digite o raio do círculo em cm: "));
+                alert("A área do círculo é igual a: " + Math.PI*(raio**2) + "cm².");
+                break;
+        }
+    </script>    
+</body>
+</html>
