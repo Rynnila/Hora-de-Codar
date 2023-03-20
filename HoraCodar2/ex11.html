@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+</head>
+<body>
+    <script>
+        //Ex--11
+        //11. Uma micro calculadora
+        //Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação). O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações
+        
+        alert("Insira dois valores. (Só serão lidos os valores 1, 2, 3 ou 4)");
+        var num1 = Number(prompt("Insira o primeiro valor: "));
+        while(num1<=0 || num1>4){
+            num1=Number(prompt("Por favor, insira um número válido."));
+        }
+
+        var num2 = Number(prompt("Insira o segundo valor: "));
+        while(num2<=0 || num2>4){
+            num2=Number(prompt("Por favor, insira um número válido."));
+        }
+
+        var escolha = Number(prompt("Escolha uma operação.\n1.Adição\n2.Subtração\n3.Divisão\n4.Multiplicação"));
+        switch(escolha){
+            case 1:
+                alert("A soma foi igual a: " + (num1+num2));
+                break;
+            case 2:
+                alert("A subtração foi igua a: "+ (num1-num2));
+                break;
+            case 3:
+                alert("A divisão foi igua a: "+ (num1/num2));
+                break;
+            case 4:
+                alert("A mutiplicação foi igua a: "+ (num1*num2));
+                break;
+        }
+        
+    </script>
+</body>
+</html>

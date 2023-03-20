@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+</head>
+<body>
+    <script>
+        //Ex--8
+        //8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+        alert("Digite quatro números");
+        var aux = 0;
+        for(var i=1; i<5; i++){
+            var numero = parseFloat(prompt("Insira o valor do nº"+ i +": "));
+            if(numero>0 & numero<=10){
+                aux+=numero;
+            }
+        }
+        if(aux/4>5){
+            alert("Você passou no teste!\nSua média foi igual à: " + aux/4);
+        }
+        else{
+            alert("Você não passo no teste... Tente novamente");
+        }
+        
+    </script>
+</body>
+</html>

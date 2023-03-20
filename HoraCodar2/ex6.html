@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        //Ex--6
+        //6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+
+        alert("Insira quatro números diferentes.");
+
+        var num1 = Number(prompt("Insira o primeiro valor: "));
+        var num2 = Number(prompt("Insira o segundo valor: "));
+        var num3 = Number(prompt("Insira o terceiro valor: "));
+        var num4 = Number(prompt("Insira o quarto valor: "));
+
+        if(num1>num2 & num1>num3 & num1>num4){
+            maior=num1;
+        }
+        else if(num2>num1 & num2>num3 & num2>num4){
+            maior=num2;
+        }
+        else if(num3>num1 & num3>num2 & num3>num4){
+            maior=num3;
+        }
+        else if(num4>num1 & num4>num2 & num4>num3){
+            maior=num4
+        }
+
+        alert(`O primeiro valor informado foi: ${num1}\nO último valor informado foi: ${num4}\nO maior número entre os informados foi: ${maior}`);
+        
+    </script>
+</body>
+</html>

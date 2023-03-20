@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+    <script>
+        //Ex--10
+        //10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+
+        alert("Calculadora de peso ideal!");
+        var sexo = Number(prompt("Digite qual é o seu sexo\n(1: feminino; 2: masculino)"))
+        var altura = parseFloat(prompt("Digite a sua altura (em metros): "));
+    
+        switch(sexo){
+            case 1:
+                pesoideal= (62.1*altura)-44.7;
+                alert(`Seu peso ideal foi igual à: ${pesoideal}`);
+                break;
+            case 2:
+                pesoideal= (72.7*altura)-58;
+                alert(`Seu IMC foi igual à: ${pesoideal}`);
+                break;
+        }
+        
+    </script>
+</body>
+</html>

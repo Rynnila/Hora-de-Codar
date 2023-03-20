@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+</head>
+<body>
+    <script>
+        //Ex--9
+        //9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+        var nasc = Number(prompt("Digite o ano do seu nascimento: "));
+    
+        if(2023-nasc<16){
+            alert("Sinto muito, mas você ainda não pode votar neste ano.");
+        }
+        else if(2023-nasc>=16 & 2023-nasc<18){
+            alert("Você não é obrigado a votar neste ano, mas você pode.");
+        }
+        else if(2023-nasc>=18 & 2023-nasc<70){
+            alert("O voto para você é obrigatório.");
+        }
+        else{
+            alert("Você não é mais obrigado a votar! Mas se quiser, pode ir.");
+        }
+        
+    </script>
+</body>
+</html>

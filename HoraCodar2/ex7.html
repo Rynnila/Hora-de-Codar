@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex7</title>
+</head>
+<body>
+    <script>
+        //Ex--7
+        //7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+
+        alert("Digite seis números diferentes");
+        var aux = 0;
+        var vetor = [''];
+        for(var i=0; i<6; i++){
+            var numero = Number(prompt("Insira um valor"));
+            vetor.push(numero);
+            if(numero<72){
+                aux+=numero;
+            }
+        }
+        alert("A soma dos números menores que 72 inseridos foi igual à: " + aux);
+        alert(`Os números inseridos foram:\n${vetor[0]}\n${vetor[1]}\n${vetor[2]}\n${vetor[3]}\n${vetor[4]}\n${vetor[5]}\n${vetor[6]}`);
+        
+    </script>
+</body>
+</html>
