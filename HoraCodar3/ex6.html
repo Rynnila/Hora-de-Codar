@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        //Ex--6
+        //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+
+        var aluno=1;
+        var nota1= parseFloat(prompt(`Digite a nota 1 do aluno de n°${n_aluno}`));
+        var nota2= parseFloat(prompt(`Digite a nota 2 do aluno de n°${n_aluno}`));
+
+
+
+        /* ----RASCUNHO QUE DEU ERRADO DE FUNCTION----
+
+        function verifica_aprova(n_aluno){
+            var aprovados=0;
+            var nota1= parseFloat(prompt(`Digite a nota 1 do aluno de n°${n_aluno}`));
+            var nota2= parseFloat(prompt(`Digite a nota 2 do aluno de n°${n_aluno}`));
+            media= (nota1+nota2)/2;
+            if(media>=9.5){
+                alert("Aluno Aprovado!!");
+                aprovados++;
+            }
+            else{
+                alert("Aluno Reprovado.");
+            }
+            n_aluno++;
+            alert(`media=${media}\nn_aluno=${n_aluno}\nn1=${nota1}\nn2=${nota2}`);
+            return(aprovados);
+        }
+        var aluno=1;
+        verifica_aprova(aluno);
+        aluno++;
+        var escolha= prompt("Calcular a média de outro aluno Sim/Não? (S/N)");
+        while(escolha!="N"){
+            if(escolha != "S" && escolha != "N"){
+                while(escolha != "S" && escolha != "N"){
+                    escolha=prompt("Por favor, use S ou N");
+                 }
+            }
+            else if (escolha=="S"){
+                verifica_aprova(aluno);
+                aluno++;
+                var escolha= prompt("Calcular a média de outro aluno Sim/Não? (S/N)");
+            } 
+            else if (escolha=="N"){
+                aprovados=verifica_aprova();
+                alert(`A quantidade de alunos aprovados foi de ${aprovados} em um total de ${aluno} alunos`);
+                break;
+            }
+        }*/
+
+    </script>
+</body>
+</html>
