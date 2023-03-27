@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script>
+        //Ex--1
+        //1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
+
+        alert("Digite dois números reais, o primeiro será dividido pelo segundo.")
+        var num1= parseFloat(prompt("Insira o primeiro número: "));
+        var num2= parseFloat(prompt("Digite o segundo número, ele deve ser positivo e diferente de 0."));
+        //if(num2)
+        while(num2==0 || num2<0){
+            num2= parseFloat(prompt("Por favor, insira um número que seja positivo e diferente de 0.\n"));
+        }
+
+        alert(`A divisão de ${num1} por ${num2} foi igual à ${num1/num2}`);
+        
+    </script>
+</body>
+</html>
