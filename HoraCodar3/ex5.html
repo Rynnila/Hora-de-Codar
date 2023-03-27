@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+</head>
+<body>
+    <script>
+        //Ex--5
+        //5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+        alert("Insira dois valores, o primeiro deve ser maior que o segundo!");
+        var num1 = Number(prompt("Número 1: "));
+        var num2 = Number(prompt("Número 2: "));
+        var soma =0;
+        var cont=0;
+        while(num1>num2){
+            num2 = Number(prompt("O segundo número deve ser maior que o primeiro.\nDigite um número válido: "));
+        }
+        
+        var media = (num1 + num2)/2;
+        alert(`A média de ${num1} e ${num2} é igual a: ${media}`);
+        i=num1;
+        for (var i = num1; i <= num2; i++) {
+          soma += i;
+          cont+=1;
+        }
+        var media = soma / cont;
+        alert(`A média dos números inteiros entre ${num1} e ${num2} é igual a: ${media}`);
+   
+    </script>
+</body>
+</html>
