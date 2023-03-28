@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex7</title>
+</head>
+<body>
+    <script>
+        //Ex--7
+        //7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+
+        alert("Digite as seis notas do aluno (só serão aceitos valores de 0 a 10)");
+        var media=0;
+        var total=0;
+        for(var i=1; i<7; i++){
+            var nota = parseFloat(prompt(`Insira a ${i}º nota do aluno: `));
+            while(nota>10 || nota<0){
+                nota= prompt("Por favor, insira um valor válido para nota (de 0 a 10): ");
+            }
+           media=media+nota;
+        }
+        total=media/6;
+        alert(`A média das notas do aluno foi igual à: ${media}/6 = ${total}.`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+    <script>
+        //Ex--10
+        //10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+
+        var n = Number(prompt("Insira um valor N que seja inteiro e maior que zero: "));
+        while(n<=0){
+            n = prompt("Por favor, insira um número inteiro maior e diferente de zero: ");
+        }
+        document.write(`As tabuadas de 1 à ${n} são: <br><br>`);
+
+        while(n>=1){
+            for(var i=10;i>=0;i--){
+                document.write(`${n} * ${i} = ${n*i} <br>`);
+            }
+            document.write("<br><br>");
+            n--;
+        }
+    </script>
+</body>
+</html>
