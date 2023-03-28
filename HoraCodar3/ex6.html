@@ -12,9 +12,41 @@
         //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
 
         var aluno=1;
-        var nota1= parseFloat(prompt(`Digite a nota 1 do aluno de n°${n_aluno}`));
-        var nota2= parseFloat(prompt(`Digite a nota 2 do aluno de n°${n_aluno}`));
+        var aprovados=0;
+        var nota1= parseFloat(prompt(`Digite a nota 1 do aluno de n°${aluno}`));
+        var nota2= parseFloat(prompt(`Digite a nota 2 do aluno de n°${aluno}`));
+        var media= (nota1+nota2)/2;
+        aluno++;
+        if (media>=9.5){
+            alert("Aluno Aprovado!");
+            aprovados++;
+        }
+        else{
+            alert("Aluno Reprovado");
+        }
 
+        var escolha= prompt("Calcular a média de outro aluno Sim/Não? (S/N)");
+        while(escolha!="N"){
+            if(escolha=="S"){
+                nota1= parseFloat(prompt(`Digite a nota 1 do aluno de n°${aluno}`));
+                nota2= parseFloat(prompt(`Digite a nota 2 do aluno de n°${aluno}`));
+                media= (nota1+nota2)/2;
+                aluno++;
+                if (media>=9.5){
+                    alert("Aluno Aprovado!");
+                    aprovados++;
+                }
+                else{
+                    alert("Aluno Reprovado");
+                }
+                var escolha= prompt("Calcular a média de outro aluno Sim/Não? (S/N)");
+            }
+            else{
+                escolha= prompt("Por favor, use apenas S ou N");
+            }
+        }
+        
+        alert(`Obrigada por usar o nosso sistema!\nA quantidade de alunos aprovados foi de ${aprovados} em um total de ${aluno} alunos.`);
 
 
         /* ----RASCUNHO QUE DEU ERRADO DE FUNCTION----
